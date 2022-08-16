@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "module name here",
+    "section": "",
+    "text": "print(\"1+1\\n2+2\")\n\n1+1\n2+2\n\n\n\nnb1 = nbformat.read(\"./00_core.ipynb\", as_version=4)\n\n\nnb1.cells[4]\n\n{'cell_type': 'code',\n 'execution_count': 4,\n 'metadata': {},\n 'outputs': [{'name': 'stdout',\n   'output_type': 'stream',\n   'text': '1+1\\n2+2\\n'}],\n 'source': 'print(\"1+1\\\\n2+2\")'}\n\n\n\nnb2 = execnb.nbio.read_nb(\"./00_core.ipynb\")\n\n\nnb2.cells[4]\n\n{ 'cell_type': 'code',\n  'execution_count': 4,\n  'idx_': 4,\n  'metadata': {},\n  'outputs': [ { 'name': 'stdout',\n                 'output_type': 'stream',\n                 'text': ['1+1\\n', '2+2\\n']}],\n  'source': 'print(\"1+1\\\\n2+2\")'}\n\n\n\ntest_eq(nb2.cells[4].outputs, nb1.cells[4].outputs)\n\nAssertionError: ==:\n[{'name': 'stdout', 'output_type': 'stream', 'text': ['1+1\\n', '2+2\\n']}]\n[{'name': 'stdout', 'output_type': 'stream', 'text': '1+1\\n2+2\\n'}]"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Project name here",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "Project name here",
+    "section": "Install",
+    "text": "Install\npip install your_project_name"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "Project name here",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2"
+  },
+  {
+    "objectID": "var.html",
+    "href": "var.html",
+    "title": "var",
+    "section": "",
+    "text": "This is some more markdown"
+  }
+]
